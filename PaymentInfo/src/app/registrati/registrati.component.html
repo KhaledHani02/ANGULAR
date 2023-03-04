@@ -1,0 +1,10 @@
+
+<p class="texto">Registrati</p>
+<div class="Registro">
+   <form  #registratiForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+      <span class="fontawesome-user"></span><input type="text" required placeholder="Inserire username" [(ngModel)]="model.NomeUtente" [ngModelOptions]="{standalone: true}"> 
+      <span class="fontawesome-lock"></span><input type="password" name="password" id="password" required placeholder="Inserire password" [(ngModel)]="model.Password" [ngModelOptions]="{standalone: true}" > 
+      <button type="submit">Registrati</button> 
+      <button id="back"(click)="goToUsers()" type="submit">Back</button>
+   </form>
+</div>

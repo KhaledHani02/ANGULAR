@@ -1,0 +1,14 @@
+<div id="cont">
+  <form  #login="ngForm" (ngSubmit)="onSubmit()">
+       <div class="container">
+         <input type="text" class="form-control" id="user" required placeholder="Enter Username" [(ngModel)]="model.utente" [ngModelOptions]="{standalone: true}" />
+         <input type="password" placeholder="Enter Password" name="psw" required [(ngModel)]="model.password" [ngModelOptions]="{standalone: true}">
+         <button  type="submit">Login</button>
+       </div>
+     </form>
+     <br><br><br><br>
+      <button (click)="goToRegistr()" type="submit">Registrati</button>
+ </div>
+ <div id="foot">
+  All Copyright reserved @PaymentInfo 2023 
+</div>
